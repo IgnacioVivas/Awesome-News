@@ -22,8 +22,8 @@ function NewsListContainer() {
             let firstDate = new Date(x.createdAt),
                 SecondDate = new Date(y.createdAt);
 
-            if (firstDate < SecondDate) return -1;
-            if (firstDate > SecondDate) return 1;
+            if (firstDate > SecondDate) return -1;
+            if (firstDate < SecondDate) return 1;
             return 0;
         });
 
