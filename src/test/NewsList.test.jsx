@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest"
 import { render, screen, userEvent } from "../test-utils";
 import { MemoryRouter } from 'react-router-dom';
-import NewsList from "./NewsList";
+import NewsList from "../components/NewsList";
 
 describe("News List", () => {
 const props = {

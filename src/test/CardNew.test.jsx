@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest"
 import { render } from "../test-utils";
 import { MemoryRouter } from 'react-router-dom';
-import CardNew from "./CardNew";
+import CardNew from "../components/CardNew";
 
 describe("Card New", () => {
 

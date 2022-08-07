@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest"
 import { render } from "../test-utils";
-import Category from "./Category";
+import Category from "../components/Category";
 
 describe("Category", () => {
 

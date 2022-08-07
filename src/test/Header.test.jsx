@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import Header from "./Header";
+import Header from "../components/Header";
 import { render, screen, userEvent } from "../test-utils";
 import { MemoryRouter } from 'react-router-dom';
 import { fireEvent } from "@testing-library/react";
