@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659904612731" clover="3.2.0">
-  <project timestamp="1659904612732" name="All files">
-    <metrics statements="197" coveredstatements="187" conditionals="21" coveredconditionals="20" methods="9" coveredmethods="8" elements="227" coveredelements="215" complexity="0" loc="197" ncloc="197" packages="4" files="7" classes="7"/>
+<coverage generated="1659914716999" clover="3.2.0">
+  <project timestamp="1659914716999" name="All files">
+    <metrics statements="230" coveredstatements="220" conditionals="23" coveredconditionals="22" methods="12" coveredmethods="9" elements="265" coveredelements="251" complexity="0" loc="230" ncloc="230" packages="4" files="8" classes="8"/>
     <package name="awesome_news">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="setupTests.js" path="C:\Users\lapto\OneDrive\Escritorio\QuorumIt\awesome_news\setupTests.js">
@@ -38,7 +38,7 @@
       </file>
     </package>
     <package name="awesome_news.src.components">
-      <metrics statements="169" coveredstatements="159" conditionals="18" coveredconditionals="17" methods="6" coveredmethods="5"/>
+      <metrics statements="202" coveredstatements="192" conditionals="20" coveredconditionals="19" methods="9" coveredmethods="6"/>
       <file name="CardNew.jsx" path="C:\Users\lapto\OneDrive\Escritorio\QuorumIt\awesome_news\src\components\CardNew.jsx">
         <metrics statements="52" coveredstatements="52" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -193,32 +193,68 @@
         <line num="77" count="1" type="stmt"/>
       </file>
       <file name="NewsList.jsx" path="C:\Users\lapto\OneDrive\Escritorio\QuorumIt\awesome_news\src\components\NewsList.jsx">
-        <metrics statements="25" coveredstatements="25" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <metrics statements="42" coveredstatements="42" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
+        <line num="20" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+      <file name="Paginator.jsx" path="C:\Users\lapto\OneDrive\Escritorio\QuorumIt\awesome_news\src\components\Paginator.jsx">
+        <metrics statements="16" coveredstatements="16" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
     </package>
     <package name="awesome_news.src.hooks">
