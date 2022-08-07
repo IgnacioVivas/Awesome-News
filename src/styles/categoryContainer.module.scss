@@ -1,0 +1,26 @@
+.categoriesContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .wrapperCategory {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        grid-gap: 30px;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .categoriesContainer{
+        .wrapperCategory {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media all and (min-width: 1200px) {
+    .categoriesContainer{
+        .wrapperCategory {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

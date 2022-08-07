@@ -1,0 +1,87 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    .cardWrapper {
+        border: 1px solid #AAAEB2;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .newDescriptionWrapper {
+            padding: 22px 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            height: 100%;
+            justify-content: space-between;
+            h3 {
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+                
+            }
+            .viewsCategoryContainer {
+                display: flex;
+                justify-content: space-between;
+                gap: 80px;
+                .categoryContainer {
+                    display: flex;
+                    gap: 5px;
+                    p {
+                        text-transform: capitalize;
+                    }
+                }
+                .viewsContainer {
+                    display: flex;
+                    gap: 5px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .dateButtonContainer {
+            background-color: #F6F6F6;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+            gap: 80px;
+            border-top: 1px solid #AAAEB2;
+            border-radius: 0px 0px 8px 8px;
+            .dateContainer {
+                display: flex;
+                gap: 5px;
+            }
+            button {
+                background-color: #A175D3;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                text-transform: capitalize;
+                font-family: helvetica;
+                color: white;
+                &:hover {
+                    background-color: #E6528A;
+                    cursor: pointer;
+                }
+                a {
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .cardContainer {
+        .cardWrapper{
+            width: 310px;
+        }
+    }
+}

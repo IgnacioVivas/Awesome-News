@@ -1,0 +1,29 @@
+.newsListContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .wrapperNewsList {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        column-gap: 50px;
+        row-gap: 35px;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .newsListContainer {
+        .wrapperNewsList {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .newsListContainer {
+        .wrapperNewsList {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

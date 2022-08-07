@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'helvetica neue';
+  src: local('Rajdhani'), url(./font/fonts\ helvetica\ neue.ttf) format('truetype');
+}
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1D1D26;
+  background-color: #F4F4F4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
