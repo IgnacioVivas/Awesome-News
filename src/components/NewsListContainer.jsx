@@ -1,10 +1,15 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
+import { GridLoader } from 'react-spinners';
 import { useNewsContext } from '../context/NewsContext';
 import NewsList from './NewsList';
+import Classes from '../styles/newsList.module.scss';
 
 function NewsListContainer() {
 
     const { infoNews } = useNewsContext();
+
+    // eslint-disable-next-line no-unused-vars
+    const [loading, setLoading] = useState(true);
 
     const infoNewsCopyForViews = [...infoNews];
 
@@ -42,9 +47,24 @@ function NewsListContainer() {
         return arr;
     };
 
+    useEffect(() => {
+        if (infoNews) {
+            setTimeout(() => {
+                setLoading(false);
+            }, 1000);
+        }
+    }, []);
+    
     return (
         <>
+        {  
+        loading ?
+            <div className={Classes.loaderContainer}>
+                <GridLoader color="rgb(230, 82, 138)"/>
+            </div>
+            :
             <NewsList orderedDataForViews={pagination(orderedDataForViews)} orderedDataForDate={pagination(orderedDataForDate)} />
+        }
         </>
     );
 }

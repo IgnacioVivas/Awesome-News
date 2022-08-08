@@ -17,6 +17,14 @@
     }
 }
 
+.loaderContainer {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media all and (min-width: 576px) {
     .container {
         .newsListContainer {

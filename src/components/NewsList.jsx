@@ -12,28 +12,28 @@ function NewsList({ orderedDataForViews, orderedDataForDate }) {
     useEffect(() => {
         setPage(1);
     }, [currentRoute.pathname]);
-    
+
     return (
         <div className={Classes.container}>
             <div className={Classes.newsListContainer}>
-            {
-                currentRoute.pathname === '/top-rated' ?
-                    <>
-                        <Paginator page={page} setPage={setPage} totalPages={orderedDataForViews.length} />
-                        <div className={Classes.wrapperNewsList} id="ratedContainer">
-                            {page && orderedDataForViews[page - 1]?.map((item, index) => <CardNew noticia={item} key={item.id} index={index} />)}
-                        </div>
-                        <Paginator page={page} setPage={setPage} totalPages={orderedDataForViews.length} />
-                    </>
-                    :
-                    <>
-                        <Paginator page={page} setPage={setPage} totalPages={orderedDataForDate.length} />
-                        <div className={Classes.wrapperNewsList} id="timeContainer">
-                            {page && orderedDataForDate[page - 1]?.map((item, index) => <CardNew noticia={item} key={item.id} index={index} />)}
-                        </div>
-                        <Paginator page={page} setPage={setPage} totalPages={orderedDataForDate.length} />
-                    </>
-            }
+                {
+                    currentRoute.pathname === '/top-rated' ?
+                        <>
+                            <Paginator page={page} setPage={setPage} totalPages={orderedDataForViews.length} />
+                            <div className={Classes.wrapperNewsList} id="ratedContainer">
+                                {page && orderedDataForViews[page - 1]?.map((item, index) => <CardNew noticia={item} key={item.id} index={index} />)}
+                            </div>
+                            <Paginator page={page} setPage={setPage} totalPages={orderedDataForViews.length} />
+                        </>
+                        :
+                        <>
+                            <Paginator page={page} setPage={setPage} totalPages={orderedDataForDate.length} />
+                            <div className={Classes.wrapperNewsList} id="timeContainer">
+                                {page && orderedDataForDate[page - 1]?.map((item, index) => <CardNew noticia={item} key={item.id} index={index} />)}
+                            </div>
+                            <Paginator page={page} setPage={setPage} totalPages={orderedDataForDate.length} />
+                        </>
+                }
             </div>
         </div>
     );
