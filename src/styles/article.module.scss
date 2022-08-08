@@ -18,9 +18,10 @@
             margin-bottom: 30px;
             .articleInfoWrapper {
                 display: flex;
+                align-items: center;
                 gap: 5px;
                 p {
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: bold;
                     text-transform: capitalize;
                 }
