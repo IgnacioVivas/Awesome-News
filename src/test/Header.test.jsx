@@ -8,7 +8,7 @@ import { render, screen } from "../test-utils";
 describe("Simple working test", () => {
 
   it("the title is visible", () => {
-    render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/awesome-news/' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -16,7 +16,7 @@ describe("Simple working test", () => {
   });
 
   it('should be marked the recent news link', () => {
-    render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/awesome-news/' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -60,7 +60,7 @@ describe("Simple working test", () => {
   });
 
   it('menu behaviour', () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
+    const component = render(<MemoryRouter initialEntries={[{ pathname: '/awesome-news/' }]}>
     <Header/>
   </MemoryRouter>);
    const element = component.container.querySelector('#iconmenu');

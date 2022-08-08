@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path='/' element={<NewsListContainer/>} />
+          <Route path='/awesome-news/' element={<NewsListContainer/>} />
           <Route path='/new/:id' element={<Article/>}/>
           <Route path='/recent-news' element={<NewsListContainer/>}/>
           <Route path='/top-rated' element={<NewsListContainer/>}/>

@@ -200,7 +200,7 @@ const props = {
 
   it("renderize correctly recent news cards", () => {
     const component = render(
-        <MemoryRouter initialEntries={[{ pathname: '/' }]}>
+        <MemoryRouter initialEntries={[{ pathname: '/awesome-news/' }]}>
         <NewsList orderedDataForDate={props.orderedDataForDate} orderedDataForViews={props.orderedDataForViews}/>
       </MemoryRouter>);
 

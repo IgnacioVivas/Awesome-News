@@ -12,5 +12,5 @@ export default defineConfig({
   coverage: {
     reporter: ['text', 'json', 'html'],
   },
-  base: '/Awesome-News/'
+  base: '/awesome-news/'
 });

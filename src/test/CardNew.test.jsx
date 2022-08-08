@@ -23,7 +23,7 @@ describe("Card New", () => {
     };
 
     const component = render(
-        <MemoryRouter initialEntries={[{ pathname: '/' }]}>
+        <MemoryRouter initialEntries={[{ pathname: '/awesome-news/' }]}>
         <CardNew noticia={props.noticia} index={props.index} />
       </MemoryRouter>);
 
