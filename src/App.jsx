@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Article from './components/Article';
 import CategoryContainer from './components/CategoryContainer';
+import Footer from "./components/Footer";
 import Header from './components/Header';
 import NewsListContainer from './components/NewsListContainer';
 import NewsContextProvider from './context/NewsContext';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/top-rated' element={<NewsListContainer/>}/>
           <Route path='/categories' element={<CategoryContainer/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
     </NewsContextProvider>
