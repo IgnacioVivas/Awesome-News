@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNewsContext } from '../context/NewsContext';
 import NewsList from './NewsList';
 
@@ -5,9 +6,9 @@ function NewsListContainer() {
 
     const { infoNews } = useNewsContext();
 
-    const infoNewsCopyForViews = [...infoNews]
+    const infoNewsCopyForViews = [...infoNews];
 
-    const infoNewscopyForDate = [...infoNews]
+    const infoNewscopyForDate = [...infoNews];
 
     const orderedDataForViews =
         infoNewsCopyForViews?.sort((a, b) => {
@@ -39,13 +40,13 @@ function NewsListContainer() {
             endPosition = endPosition + 18;
         }
         return arr;
-    }
+    };
 
     return (
         <>
             <NewsList orderedDataForViews={pagination(orderedDataForViews)} orderedDataForDate={pagination(orderedDataForDate)} />
         </>
-    )
+    );
 }
 
-export default NewsListContainer
+export default NewsListContainer;

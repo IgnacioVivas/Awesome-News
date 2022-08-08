@@ -1,6 +1,7 @@
-import { useNewsContext } from '../context/NewsContext'
+import { React } from "react";
+import { useNewsContext } from '../context/NewsContext';
 import Category from './Category';
-import Classes from '../styles/categoryContainer.module.scss'
+import Classes from '../styles/categoryContainer.module.scss';
 
 function CategoryContainer() {
 
@@ -20,7 +21,7 @@ function CategoryContainer() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default CategoryContainer
+export default CategoryContainer;

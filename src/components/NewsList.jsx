@@ -1,8 +1,8 @@
-import CardNew from './CardNew'
-import Classes from '../styles/newsList.module.scss'
-import { useLocation } from "react-router-dom"
-import { useState, useEffect } from 'react'
+import { React, useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
+import CardNew from './CardNew';
 import Paginator from './Paginator';
+import Classes from '../styles/newsList.module.scss';
 
 function NewsList({ orderedDataForViews, orderedDataForDate }) {
 
@@ -11,7 +11,7 @@ function NewsList({ orderedDataForViews, orderedDataForDate }) {
 
     useEffect(() => {
         setPage(1);
-    }, [currentRoute.pathname])
+    }, [currentRoute.pathname]);
     
     return (
         <div className={Classes.container}>
@@ -36,7 +36,7 @@ function NewsList({ orderedDataForViews, orderedDataForDate }) {
             }
             </div>
         </div>
-    )
+    );
 }
 
-export default NewsList
+export default NewsList;

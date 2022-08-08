@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest"
-import { render, screen, userEvent } from "../test-utils";
+import { React } from "react";
 import { MemoryRouter } from 'react-router-dom';
+import { describe, expect, it } from "vitest";
+import { render } from "../test-utils";
 import NewsList from "../components/NewsList";
 
 describe("News List", () => {
@@ -184,7 +185,7 @@ const props = {
             }
         ]
     ],
-}
+};
 
   it("renderize correctly the Top rated cards", () => {
     const component = render(
@@ -192,7 +193,7 @@ const props = {
         <NewsList orderedDataForDate={props.orderedDataForDate} orderedDataForViews={props.orderedDataForViews}/>
       </MemoryRouter>);
 
-    const ratedContainer = component.container.querySelector('#ratedContainer')
+    const ratedContainer = component.container.querySelector('#ratedContainer');
     expect(ratedContainer).toBeDefined();
 
   });
@@ -203,7 +204,7 @@ const props = {
         <NewsList orderedDataForDate={props.orderedDataForDate} orderedDataForViews={props.orderedDataForViews}/>
       </MemoryRouter>);
 
-    const ratedContainer = component.container.querySelector('#timeContainer')
+    const ratedContainer = component.container.querySelector('#timeContainer');
     expect(ratedContainer).toBeDefined();
 
   });

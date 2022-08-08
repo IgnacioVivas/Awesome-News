@@ -1,5 +1,5 @@
-import React from 'react'
-import Classes from '../styles/category.module.scss'
+import React from 'react';
+import Classes from '../styles/category.module.scss';
 
 function Category({ category }) {
     return (
@@ -9,7 +9,7 @@ function Category({ category }) {
                 <p id='categoryName'>{category}</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default Category
+export default Category;

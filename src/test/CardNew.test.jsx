@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest"
-import { render } from "../test-utils";
+import { React } from "react";
 import { MemoryRouter } from 'react-router-dom';
+import { render } from "../test-utils";
+import { describe, expect, it } from "vitest";
 import CardNew from "../components/CardNew";
 
 describe("Card New", () => {
@@ -19,14 +20,14 @@ describe("Card New", () => {
             views: 1310
           },
         index: 1
-    }
+    };
 
     const component = render(
         <MemoryRouter initialEntries={[{ pathname: '/' }]}>
         <CardNew noticia={props.noticia} index={props.index} />
       </MemoryRouter>);
 
-    const card = component.container.querySelector('#cardNew')
+    const card = component.container.querySelector('#cardNew');
     expect(card).toBeDefined();
 
   });

@@ -1,12 +1,12 @@
-import Classes from '../styles/header.module.scss'
-import { Link, useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, React } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Classes from '../styles/header.module.scss';
 
 function Header() {
 
     const currentRoute = useLocation();
 
-    const [showMobileMenu, setShowMobileMenu] = useState(true)
+    const [showMobileMenu, setShowMobileMenu] = useState(true);
 
     const openMenu = () => {
         if (document.getElementById("menu")) {
@@ -16,7 +16,7 @@ function Header() {
                 document.querySelector("#menu").style.left = "-1000px";
             }
         }
-    }
+    };
 
     useEffect(() => {
         switch (currentRoute.pathname) {
@@ -43,7 +43,7 @@ function Header() {
             default:
                 break;
         }
-    }, [currentRoute.pathname])
+    }, [currentRoute.pathname]);
 
     return (
         <div className={Classes.containerHeader}>
@@ -71,7 +71,7 @@ function Header() {
 
             </div>
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;

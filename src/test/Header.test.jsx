@@ -1,13 +1,14 @@
-import { describe, expect, it } from "vitest"
-import Header from "../components/Header";
-import { render, screen, userEvent } from "../test-utils";
+import { React } from "react";
 import { MemoryRouter } from 'react-router-dom';
+import Header from "../components/Header";
 import { fireEvent } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { render, screen } from "../test-utils";
 
 describe("Simple working test", () => {
 
   it("the title is visible", () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -15,7 +16,7 @@ describe("Simple working test", () => {
   });
 
   it('should be marked the recent news link', () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -23,10 +24,10 @@ describe("Simple working test", () => {
     const style = getComputedStyle(element);
 
     expect(style.color).toBe('black');
-  })
+  });
 
   it('should be marked the top rated link', () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/top-rated' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/top-rated' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -34,10 +35,10 @@ describe("Simple working test", () => {
     const style = getComputedStyle(element);
 
     expect(style.color).toBe('black');
-  })
+  });
 
   it('should be marked the recent news link', () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/recent-news' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/recent-news' }]}>
       <Header />
     </MemoryRouter>);
 
@@ -45,10 +46,10 @@ describe("Simple working test", () => {
     const style = getComputedStyle(element);
 
     expect(style.color).toBe('black');
-  })
+  });
 
   it('should be marked the categories link', () => {
-    const component = render(<MemoryRouter initialEntries={[{ pathname: '/categories' }]}>
+    render(<MemoryRouter initialEntries={[{ pathname: '/categories' }]}>
     <Header />
   </MemoryRouter>);
 
@@ -56,18 +57,18 @@ describe("Simple working test", () => {
    const style = getComputedStyle(element);
    
    expect(style.color).toBe('black');
-  })
+  });
 
   it('menu behaviour', () => {
     const component = render(<MemoryRouter initialEntries={[{ pathname: '/' }]}>
     <Header/>
   </MemoryRouter>);
    const element = component.container.querySelector('#iconmenu');
-   fireEvent.click(element)
+   fireEvent.click(element);
    const menu = component.container.querySelector('#menu');
    const style = getComputedStyle(menu);
 
    expect(style.left).toBe("-1000px");
-  })
+  });
 
 });

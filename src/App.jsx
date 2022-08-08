@@ -1,10 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import Article from './components/Article'
-import CategoryContainer from './components/CategoryContainer'
-import Header from './components/Header'
-import NewsListContainer from './components/NewsListContainer'
-import NewsContextProvider from './context/NewsContext'
+
+import { React } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Article from './components/Article';
+import CategoryContainer from './components/CategoryContainer';
+import Header from './components/Header';
+import NewsListContainer from './components/NewsListContainer';
+import NewsContextProvider from './context/NewsContext';
 
 function App() {
 
@@ -23,7 +25,7 @@ function App() {
       </BrowserRouter>
     </div>
     </NewsContextProvider>
-  )
+  );
 }
 
-export default App
+export default App;

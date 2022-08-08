@@ -1,15 +1,15 @@
-import Classes from '../styles/cardNew.module.scss'
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { useFormatedDate } from '../hooks/useFormatedDate'
+import { useEffect, useState, React } from 'react';
+import { Link } from 'react-router-dom';
+import { useFormatedDate } from '../hooks/useFormatedDate';
+import Classes from '../styles/cardNew.module.scss';
 
 function CardNew({ noticia, index }) {
 
-    const [date, setDate] = useState()
+    const [date, setDate] = useState();
 
     useEffect(() => {
         setDate(useFormatedDate(noticia.createdAt));
-    }, [])
+    }, []);
 
     return (
             <div className={Classes.cardContainer} id="carNew" >
@@ -46,7 +46,7 @@ function CardNew({ noticia, index }) {
 
                 </div>
             </div>
-    )
+    );
 }
 
-export default CardNew
+export default CardNew;

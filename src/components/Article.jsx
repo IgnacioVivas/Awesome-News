@@ -1,23 +1,23 @@
-import Classes from '../styles/article.module.scss'
-import { useParams } from 'react-router-dom'
-import { useNewsContext } from '../context/NewsContext'
-import { useState, useEffect } from 'react'
-import { useFormatedDate } from '../hooks/useFormatedDate'
+import { useState, useEffect, React } from 'react';
+import { useParams } from 'react-router-dom';
+import { useNewsContext } from '../context/NewsContext';
+import { useFormatedDate } from '../hooks/useFormatedDate';
+import Classes from '../styles/article.module.scss';
 
 function Article() {
 
-    const { id }= useParams()
-    const { infoNews } = useNewsContext()
-    const [article, setArticle] = useState()
-    const [date, setDate] = useState()
+    const { id }= useParams();
+    const { infoNews } = useNewsContext();
+    const [article, setArticle] = useState();
+    const [date, setDate] = useState();
 
     useEffect(() => {
         setArticle(infoNews[id]);
-    }, [])
+    }, []);
 
     useEffect(() => {
         setDate(useFormatedDate(article?.createdAt));
-    }, [article])
+    }, [article]);
     
     return (
         <div className={Classes.articleContainer}>
@@ -48,7 +48,7 @@ function Article() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Article
+export default Article;
