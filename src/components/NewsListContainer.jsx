@@ -8,7 +8,6 @@ function NewsListContainer() {
 
     const { infoNews } = useNewsContext();
 
-    // eslint-disable-next-line no-unused-vars
     const [loading, setLoading] = useState(true);
 
     const infoNewsCopyForViews = [...infoNews];
@@ -21,7 +20,6 @@ function NewsListContainer() {
             if (a.views > b.views) return -1;
             return 0;
         });
-
 
     const orderedDataForDate =
         infoNewscopyForDate.sort(function (x, y) {
