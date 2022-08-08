@@ -1,13 +1,21 @@
 .categoriesContainer{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     .wrapperCategory {
         display: grid;
         grid-template-columns: 1fr;
         width: 90%;
         grid-gap: 30px;
     }
+}
+.titleCategories {
+    margin-top: 30px;
+    display: block;
+    width: 90%;
+    font-family: "helveticaNeueBold";
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (min-width: 576px) {

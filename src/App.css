@@ -3,4 +3,11 @@
   padding: 0;
   text-decoration: none;
   cursor: default;
+  font-family: "helveticaNeueRegular";
+  font-weight: 500;
+}
+
+.font-bold {
+  font-family: "helveticaNeueBold";
+  font-weight: 800;
 }

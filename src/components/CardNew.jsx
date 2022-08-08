@@ -17,7 +17,7 @@ function CardNew({ noticia, index }) {
                     <img src={noticia.imageUrl} alt="" />
                     <div className={Classes.newDescriptionWrapper}>
 
-                        <h3>{noticia.title}</h3>
+                        <h3 className='font-bold'>{noticia.title}</h3>
 
                         <div className={Classes.viewsCategoryContainer}>
 
